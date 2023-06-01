@@ -141,7 +141,7 @@ def spath_algorithm(network, source_name, destination_name):
            destination_name (str): The name of the destination node.
 
        Returns:
-           length and path (tuple): The length of the shortest path and the path itself as a list of node names.
+           length and path (tuple(float, list)): The length of the shortest path and the path itself as a list of node names.
                                     Returns (None, None) if no path can be found.
        """
     unvisited = spath_initialise(network, source_name)
